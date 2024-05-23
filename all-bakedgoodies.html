@@ -46,7 +46,12 @@
         font-weight: bold;
         color: white !important
     }
-
+    .navbar-nav{
+        font-weight: 500;
+    }
+    .nav-link:hover{
+        color: black;
+    }
     .nav-link:hover{
         color: black;
     }
@@ -112,6 +117,17 @@
         width: 20px;
         height: auto;
     }
+    .navbar-toggler {
+    border-color: rgba(0,0,0,.1);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler {
+        color: black;
+    }
 </style>
 </head>
 <body>
@@ -152,33 +168,36 @@
         <h1 class="text-center mb-4">All Baked Goodies</h1>
     </div>
 
-    <!-- Secondary Navbar -->
-    <nav class="navbar navbar-expand-lg mb-3 secondary-navbar">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSecondary">
+<!-- Secondary Navbar -->
+<nav class="navbar navbar-expand-lg mb-3 secondary-navbar">
+    <div class="container">
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSecondary" aria-controls="navbarSecondary" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSecondary">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link current-link" href="all-bakedgoodies.html">All</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="prodserv.html">Cakes</a>
+                <li class="nav-item">
+                    <a class="nav-link current-link" href="all-bakedgoodies.html">All</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link" href="customed-cakes.html">Customized Cakes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="premade-cakes">Premade Cakes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="cheese-cakes">Cheesecakes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pastries">Pastries</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prodserv.html">Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customed-cakes.html">Customized Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="premade-cakes.html">Premade Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cheese-cakes.html">Cheesecakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pastries.html">Pastries</a>
+                </li>
             </ul>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
       
 
     <!-- Products Section -->
@@ -195,54 +214,54 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/blackforest.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="blackforest.html"><img src="images/blackforest.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Black Forest Cake</a></h5>
+                        <h5 class="card-title"><a href="blackforest.html">Black Forest Cake</a></h5>
                         <p class="card-text">From ₱800 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/blueberry.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="blueberrycake.html"><img src="images/blueberry.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Blueberry Cheesecake</a></h5>
+                        <h5 class="card-title"><a href="blueberrycake.html">Blueberry Cheesecake</a></h5>
                         <p class="card-text">₱1300 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/brigadeiro.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="brigadeirocake.html"><img src="images/brigadeiro.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Brigadeiro Cake</a></h5>
+                        <h5 class="card-title"><a href="brigadeirocake.html">Brigadeiro Cake</a></h5>
                         <p class="card-text">₱1200 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/caramelbites.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="caramelbites.html"><img src="images/caramelbites.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Caramel Bites</a></h5>
+                        <h5 class="card-title"><a href="caramelbites.html">Caramel Bites</a></h5>
                         <p class="card-text">₱500 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/chocolatemuffins.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="chocolatemuffins.html"><img src="images/chocolatemuffins.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Chocolate Muffins</a></h5>
+                        <h5 class="card-title"><a href="chocolatemuffins.html">Chocolate Muffins</a></h5>
                         <p class="card-text">From ₱350 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/cinnamonrolls.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="cinnamonroll.html"><img src="images/cinnamonrolls.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Cinnamon Rolls</a></h5>
+                        <h5 class="card-title"><a href="cinnamonroll.html">Cinnamon Rolls</a></h5>
                         <p class="card-text">From ₱250 PHP</p>
                     </div>
                 </div>
@@ -250,10 +269,19 @@
            
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/cookies.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="cookies.html"><img src="images/cookies.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Cookies</a></h5>
+                        <h5 class="card-title"><a href="cookies.html">Cookies</a></h5>
                         <p class="card-text">From ₱300 PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="cookiemonster.html"><img src="images/cookiemonster.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="cookiemonster.html">Cookie Monster Cheesecake</a></h5>
+                        <p class="card-text">₱1400 PHP</p>
                     </div>
                 </div>
             </div>
@@ -268,9 +296,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/mango.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="mangocheesecake.html"><img src="images/mango.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Mango Cheesecake</a></h5>
+                        <h5 class="card-title"><a href="mangocheesecake.html">Mango Cheesecake</a></h5>
                         <p class="card-text">₱1300 PHP</p>
                     </div>
                 </div>
@@ -304,45 +332,45 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/oreobrownies.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="oreobrownies.html"><img src="images/oreobrownies.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Oreo Brownies</a></h5>
+                        <h5 class="card-title"><a href="oreobrownies.html">Oreo Brownies</a></h5>
                         <p class="card-text">₱600 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/oreo.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="oreocheesecake.html"><img src="images/oreo.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Oreo Cheesecake</a></h5>
+                        <h5 class="card-title"><a href="oreocheesecake.html">Oreo Cheesecake</a></h5>
                         <p class="card-text">₱1300 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/redvelvet.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="redvelvetcake.html"><img src="images/redvelvet.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Red Velvet Cake</a></h5>
+                        <h5 class="card-title"><a href="redvelvetcake.html">Red Velvet Cake</a></h5>
                         <p class="card-text">₱1500 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/strawberrycheesecake.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="strawberryshortcake.html"><img src="images/strawberrycheesecake.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Strawberry Cheesecake</a></h5>
+                        <h5 class="card-title"><a href="strawberryshortcake.html">Strawberry Cheesecake</a></h5>
                         <p class="card-text">₱1400 PHP</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/strawberryshortcake.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="strawberryshortcake.html"><img src="images/strawberryshortcake.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Strawberry Shortcake</a></h5>
+                        <h5 class="card-title"><a href="strawberryshortcake.html">Strawberry Shortcake</a></h5>
                         <p class="card-text">₱1300 PHP</p>
                     </div>
                 </div>
@@ -367,18 +395,18 @@
             </div>
          <div class="col-md-4">
             <div class="card">
-                <a href=""><img src="images/ubeleche.jpg" class="card-img-top" alt="Cake 3"></a>
+                <a href="ubelecheflan.html"><img src="images/ubeleche.jpg" class="card-img-top" alt="Cake 3"></a>
                 <div class="card-body">
-                    <h5 class="card-title"><a href="">Ube Leche Flan Cake</a></h5>
+                    <h5 class="card-title"><a href="ubelecheflan.html">Ube Leche Flan Cake</a></h5>
                     <p class="card-text">₱1800 PHP</p>
                 </div>
             </div>
         </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href=""><img src="images/unicorncheesecake.jpg" class="card-img-top" alt="Cake 3"></a>
+                    <a href="unicorncheesecakes.html"><img src="images/unicorncheesecake.jpg" class="card-img-top" alt="Cake 3"></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">Unicorn Cheesecakes</a></h5>
+                        <h5 class="card-title"><a href="unicorncheesecakes.html">Unicorn Cheesecakes</a></h5>
                         <p class="card-text">₱800 PHP</p>
                     </div>
                 </div>

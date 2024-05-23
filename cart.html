@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart - BakedGoodiesByLeira 🥄</title>
+  <link rel="icon" href="IMAGES/logo.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     /* Additional CSS styles */
@@ -34,22 +35,25 @@
       background-color: #f1ece4;
     }
 
-    .navbar {
-            background-color: #DD7E92;
-            box-shadow: 0 4px rgb(0, 0, 0)a(0, 0, 0, 0.1);
-        }
+    .navbg {
+        background-color: #DD7E92;
+        color: white;
+    }
 
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: white !important;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+    .nav-link {
+        color: white !important
+    }
 
-        .navbar-brand:hover,
-        .navbar-nav .nav-link:hover {
-            color: #FFE6E6 !important;
-        }
+    .navbar-brand {
+        font-weight: bold;
+        color: white !important
+    }
+    .navbar-nav{
+        font-weight: 500;
+    }
+    .nav-link:hover{
+        color: black;
+    }
     .sticky-top img{
     width: 20px;
     height: auto;
@@ -71,7 +75,9 @@
       color: black;
       transition: color 0.3s ease;
     }
-
+    .custombg2{
+      background-color: #DD7E92;
+    }
     .footer a:hover {
       color: #FFE6E6;
     }
@@ -82,7 +88,7 @@
 
   <!-- Navigation Bar -->
   <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light custombg2">
       <a class="navbar-brand" href="#">BakedGoodiesByLeira</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

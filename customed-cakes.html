@@ -46,7 +46,9 @@
         font-weight: bold;
         color: white !important
     }
-
+    .navbar-nav{
+        font-weight: 500;
+    }
     .nav-link:hover{
         color: black;
     }
@@ -112,6 +114,17 @@
         width: 20px;
         height: auto;
     }
+    .navbar-toggler {
+    border-color: rgba(0,0,0,.1);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler {
+        color: black;
+    }
 </style>
 </head>
 <body>
@@ -153,33 +166,35 @@
     </div>
 
     <!-- Secondary Navbar -->
-    <nav class="navbar navbar-expand-lg mb-3 secondary-navbar">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSecondary">
+<nav class="navbar navbar-expand-lg mb-3 secondary-navbar">
+    <div class="container">
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSecondary" aria-controls="navbarSecondary" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSecondary">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="all-bakedgoodies.html">All</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="prodserv.html">Cakes</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="all-bakedgoodies.html">All</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link current-link" href="customed-cakes.html">Customized Cakes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="premade-cakes.html">Premade Cakes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="cheese-cakes.html">Cheesecakes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pastries.html">Pastries</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prodserv.html">Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link current-link" href="customed-cakes.html">Customized Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="premade-cakes.html">Premade Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cheese-cakes.html">Cheesecakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pastries.html">Pastries</a>
+                </li>
             </ul>
-          </div>
         </div>
-      </nav>
-
+    </div>
+</nav>
     <!-- Products Section -->
     <!--Customized Cakes-->
     <div class="container">
